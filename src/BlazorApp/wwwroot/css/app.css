@@ -23,7 +23,7 @@ section {
 }
 
 section.dark {
-  min-height: 100vh;
+  min-height: 70vh;
   color: white;
   background: rgba(0, 0, 0, 0.25);
 }
