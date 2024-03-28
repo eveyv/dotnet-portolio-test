@@ -1,14 +1,14 @@
 {
-  "description": "I'm a Programmer / Analyst working in warehousing and logistics. I'm passionate about both Application and Web Development, where I strive to solve dynamic problems using a wide range of technology from Javascript, C# and BASIC to AWS Cloud solutions and a multitude of database technologies. I'm currently working on getting certified as an AWS Solutions Architect.",
+  "description": "I'm a Software Developer currently working in warehousing and logistics. I enjoy both application and web development, where I strive to solve dynamic problems using a wide range of technology from Javascript, C# and BASIC to AWS Cloud solutions and a multitude of database technologies. I'm currently working on my AWS Solutions Architect certification.",
   "skills": [
     "Applicaton Development",
-    ".NET / C#, Javscript, SQL",
-    "Label / Barcode Programming",
+    ".NET / C#, Javscript, BASIC",
+    "Label / Barcode / General Operations Programming",
     "Data Analytics & Reporting",
     "Full-stack Web Development",
-    "Responsive Design",
-    "Documentation Fanatic",
-    "Software Design and Planning"
+    "SQL, Flat-File databases",
+    "Documentation Writing Experience",
+    "Software Design, Architecture and Planning"
   ],
-  "detailOrQuote": "As I expand and refine my technical acumen, I continue to see new ways to solve problems both new and old. I love a good challenge and always look forward to improving someone's life experience with technology."
+  "detailOrQuote": "As I expand and refine my technical acumen, I continue to see new ways to solve problems both new and old. I love a good challenge and thoroughly enjoy improving life-quality with technology."
 }
