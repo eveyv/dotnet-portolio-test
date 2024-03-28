@@ -10,15 +10,17 @@
     }
     else
     {
-        <h1>@property.Name</h1>
+        <h1 style="text-align: center;">@property.Name</h1>
         <h2>@property.Title</h2>
     }
     </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
+    @* comment out scroll arrow*@
+    @* <div style="position: absolute; bottom: 8rem; left: 50%;">
         <a href="#about" target="_top">
             <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
         </a>
-    </div>
+    </div> *@
+
 </section>
 
 @code {
@@ -34,6 +36,6 @@
     protected override async Task OnInitializedAsync()
     {
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
-        hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
+        @* hero = await HeroImageService.GetHeroAsync(img => img.Name is "home"); *@__o
     }
 }
