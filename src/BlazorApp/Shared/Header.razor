@@ -1,7 +1,20 @@
+@inject NavigationManager NavigationManager
+
 <div id="header">
     <a href="#home" target="_top">Home</a>
     <a href="#about" target="_top">About</a>
-    <a href="/fill/in/path" download="Test.png">Resume (WIP)</a>
+    <a href="#" download="everett_resume" @onclick="DownloadResume">Resume (WIP)</a>
     @* <a href="#portfolio" target="_top">Portfolio</a> *@
     @* <a href="#contact" target="_top">Contact</a> *@
 </div>
+
+@code {
+    private async Task DownloadResume()
+    {
+        // Replace "path_to_your_resume.pdf" with the actual path to your resume file
+        var resumePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/sample-data/my_resume.pdf";
+
+        // Navigate to the file
+        NavigationManager.NavigateTo(resumePath, forceLoad: true);
+    }
+}
