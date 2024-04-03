@@ -1,33 +1,27 @@
 @inject NavigationManager NavigationManager
+@using System.Text.Json
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
 
 <div id="header">
     <a href="#home" target="_top">Home</a>
     <a href="#about" target="_top">About</a>
-    <a href="#" target="_top" download="everett_resume" @onclick="DownloadResume">Resume (WIP)</a>
+    <a href="#" target="_top" download="everett_resume" @onclick="downloadObject">Resume (WIP)</a>
     @* <a href="#portfolio" target="_top">Portfolio</a> *@
     @* <a href="#contact" target="_top">Contact</a> *@
 </div>
 
-@* @code {
-    private async Task DownloadResume()
-    {
-        // Replace "path_to_your_resume.pdf" with the actual path to your resume file
-        var resumePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/sample-data/my_resume.pdf";
-        // Navigate to the file
-        NavigationManager.NavigateTo(resumePath, forceLoad: true);
-    }
-} *@
-
 @code {
-    
-    [Inject]
-    private IJSRuntime JSRuntime { get; set; }
-
-    private async Task DownloadResume()
+    async Task downloadObject()
     {
-        // Replace "path_to_your_resume.pdf" with the actual path to your resume file
-        var resumePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/my_resume.pdf.pdf";
+        var filePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/my_resume.pdf"; 
+        var fileName = "everett_yeaw_resume.pdf";
 
-        await JSRuntime.InvokeVoidAsync("downloadResume", resumePath);
+        using (var fileStream = new FileStream(filePath, FileMode.Open))
+        {
+            using var streamRef = new DotNetStreamReference(stream: fileStream);
+            await JSRuntime.InvokeVoidAsync("downloadFileFromStream", fileName, streamRef);
+        }
     }
 }

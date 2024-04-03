@@ -1,11 +1,18 @@
 let filePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/my_resume.pdf";
 let fileName = "my_resume.pdf";
 
-window.downloadResume = function (filePath, fileName) {
-    var link = document.createElement('a');
-    link.href = filePath;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+window.downloadFileFromStream = async (fileName, contentStreamReference) => {
+    const arrayBuffer = await contentStreamReference.arrayBuffer();
+    const blob = new Blob([arrayBuffer]);
+    const url = URL.createObjectURL(blob);
+    const anchorElement = document.createElement('a');
+    anchorElement.href = url;
+
+    if (fileName) {
+        anchorElement.download = fileName;
+    }
+
+    anchorElement.click();
+    anchorElement.remove();
+    URL.revokeObjectURL(url);
 }
