@@ -1,5 +1,5 @@
-let filePath = "my_resume.pdf";
-let fileName = "my_resume.pdf";
+let filePath = "everett_resume.pdf";
+let fileName = "everett_resume.pdf";
 
 window.downloadFileFromStream = async (fileName, contentStreamReference) => {
     const arrayBuffer = await contentStreamReference.arrayBuffer();
