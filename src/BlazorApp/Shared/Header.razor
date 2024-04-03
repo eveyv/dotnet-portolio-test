@@ -7,14 +7,3 @@
     @* <a href="#portfolio" target="_top">Portfolio</a> *@
     @* <a href="#contact" target="_top">Contact</a> *@
 </div>
-
-@code {
-    private async Task DownloadResume()
-    {
-        // Replace "path_to_your_resume.pdf" with the actual path to your resume file
-        var resumePath = "/dotnet-portolio-test/src/BlazorApp/wwwroot/sample-data/my_resume.pdf";
-
-        // Navigate to the file
-        NavigationManager.NavigateTo(resumePath, forceLoad: true);
-    }
-}
