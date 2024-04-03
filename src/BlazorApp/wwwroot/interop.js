@@ -1,4 +1,4 @@
-let filePath = "/my_resume.pdf";
+let filePath = "my_resume.pdf";
 let fileName = "my_resume.pdf";
 
 window.downloadFileFromStream = async (fileName, contentStreamReference) => {
