@@ -7,7 +7,7 @@
 <div id="header">
     <a href="#home" target="_top">Home</a>
     <a href="#about" target="_top">About</a>
-    <a href="#" target="_top" download="everett_resume.pdf" @onclick="downloadObject">Resume (WIP)</a>
+    <a href="everett_resume.pdf" target="_top" download="everett_resume.pdf" @onclick="downloadObject">Resume (WIP)</a>
     @* <a href="#portfolio" target="_top">Portfolio</a> *@
     @* <a href="#contact" target="_top">Contact</a> *@
 </div>
@@ -15,7 +15,7 @@
 @code {
     async Task downloadObject()
     {
-        var filePath = "everett_resume.pdf"; 
+        var filePath = "everett_resume.pdf";
         var fileName = "everett_resume.pdf";
 
         using (var fileStream = new FileStream(filePath, FileMode.Open))
