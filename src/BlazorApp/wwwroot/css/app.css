@@ -184,6 +184,20 @@ img.social-icon {
   height: 30px;
 }
 
+img.bar-icon {
+  width: 25px;
+  height: 20px;
+}
+
+.icon-group {
+  vertical-align: bottom;
+  display: inline-block;
+
+  a {
+    vertical-align: bottom;
+  }
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
