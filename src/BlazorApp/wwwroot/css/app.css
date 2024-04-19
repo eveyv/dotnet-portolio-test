@@ -65,6 +65,10 @@ h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 3rem;
     margin: 0;
+    text-align: left;
+  }
+  h2 {
+    text-align: left;
   }
 }
 
@@ -74,6 +78,11 @@ h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 4rem;
     margin: 0;
+    text-align: left;
+
+  }
+  h2 {
+    text-align: left;
   }
 }
 
@@ -83,6 +92,11 @@ h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 5rem;
     margin: 0;
+    text-align: left;
+
+  }
+  h2 {
+    text-align: left;
   }
 }
 
