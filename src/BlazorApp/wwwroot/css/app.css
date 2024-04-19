@@ -12,11 +12,16 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-}dotnet 
+  color: black;
+}
 
 div#main {
   display: flex;
   flex-direction: column;
+}
+
+div#header {
+  border: 1px solid black;
 }
 
 section {
@@ -25,7 +30,7 @@ section {
 
 section.dark {
   min-height: 100vh;
-  color: white;
+  color: black;
   background: rgba(0, 0, 0, 0.25);
 }
 
