@@ -40,180 +40,191 @@ section.light {
   padding: 8rem 0;
 }
 
-section img.background {
-  width: 100vmax;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  pointer-events: none;
-  object-fit: cover;
-}
+@media screen and (min-width: 301px) and (max-width: 770px) {
+        ul {
+        font-size: 11px;
+        margin-left: 20%;
+        }
+    
+        .large {
+        font-size: 16px;
+        }
+    }
 
-h1 {
-  font-weight: 300;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
-  margin: 0;
-}
+    section img.background {
+        width: 100vmax;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        pointer-events: none;
+        object-fit: cover;
+    }
 
-@media screen and (max-width: 300px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
-    margin: 0;
-    text-align: left;
-  }
-  h2 {
-    text-align: left;
-  }
-}
+    h1 {
+        font-weight: 300;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 7rem;
+        margin: 0;
+    }
 
-@media screen and (min-width: 301px) and (max-width: 360px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 4rem;
-    margin: 0;
-    text-align: left;
+    @media screen and (max-width: 300px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 3rem;
+            margin: 0;
+            text-align: left;
+        }
 
-  }
-  h2 {
-    text-align: left;
-  }
-}
+        h2 {
+            text-align: left;
+        }
+    }
 
-@media screen and (min-width: 361px) and (max-width: 420px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 5rem;
-    margin: 0;
-    text-align: left;
+    @media screen and (min-width: 301px) and (max-width: 360px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 4rem;
+            margin: 0;
+            text-align: left;
+        }
 
-  }
-  h2 {
-    text-align: left;
-  }
-}
+        h2 {
+            text-align: left;
+        }
+    }
 
-h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0;
-  text-align: center;
-}
+    @media screen and (min-width: 361px) and (max-width: 420px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 5rem;
+            margin: 0;
+            text-align: left;
+        }
 
-h3 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin: 0;
-}
+        h2 {
+            text-align: left;
+        }
+    }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
-}
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+    }
 
-p.large {
-  font-size: 24px;
-}
+    h3 {
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin: 0;
+    }
 
-p.small {
-  font-size: 15px;
-}
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
 
-hr {
-  margin: 2.5rem;
-}
+        p.large {
+            font-size: 24px;
+        }
 
-li {
-  line-height: 1.7;
-}
+        p.small {
+            font-size: 15px;
+        }
 
-li::marker {
-  color: #4e567e;
-}
+    hr {
+        margin: 2.5rem;
+    }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+    li {
+        line-height: 1.7;
+    }
 
-a:hover {
-  color: #4e567e;
-}
+        li::marker {
+            color: #4e567e;
+        }
 
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 3rem;
-}
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-@media screen and (max-width: 420px) {
-  .portfolio-container {
-    flex-direction: column;
-  }
-}
+        a:hover {
+            color: #4e567e;
+        }
 
-.portfolio-hero {
-  max-width: 40%;
-  align-self: center;
-}
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3rem;
+    }
 
-@media screen and (max-width: 420px) {
-  .portfolio-hero {
-    max-width: 100%;
-    align-self: center;
-  }
-}
+    @media screen and (max-width: 420px) {
+        .portfolio-container {
+            flex-direction: column;
+        }
+    }
 
-.container {
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 330px 300px;
-  grid-gap: 20px;
-}
+    .portfolio-hero {
+        max-width: 40%;
+        align-self: center;
+    }
 
-@media screen and (max-width: 420px) {
-  .container {
-    margin: 20px auto;
-    display: inline;
-    grid-template-columns: 330px 300px;
-    grid-gap: 20px;
-  }
-}
+    @media screen and (max-width: 420px) {
+        .portfolio-hero {
+            max-width: 100%;
+            align-self: center;
+        }
+    }
 
-.container .box {
-  border-radius: 10px;
-  padding: 24px 16px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border: 1px solid rgb(204, 204, 204);
-  text-align: center;
-}
+    .container {
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 330px 300px;
+        grid-gap: 20px;
+    }
 
-img.social-icon {
-  width: 30px;
-  height: 30px;
-}
+    @media screen and (max-width: 420px) {
+        .container {
+            margin: 20px auto;
+            display: inline;
+            grid-template-columns: 330px 300px;
+            grid-gap: 20px;
+        }
+    }
 
-img.bar-icon {
-  width: 25px;
-  height: 20px;
-}
+    .container .box {
+        border-radius: 10px;
+        padding: 24px 16px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        border: 1px solid rgb(204, 204, 204);
+        text-align: center;
+    }
 
-.icon-group {
-  vertical-align: bottom;
-  display: inline-block;
+    img.social-icon {
+        width: 30px;
+        height: 30px;
+    }
 
-  a {
+    img.bar-icon {
+        width: 25px;
+        height: 20px;
+    }
+
+    .icon-group {
+        vertical-align: bottom;
+        display: inline-block;
+        a {
     vertical-align: bottom;
   }
 }
