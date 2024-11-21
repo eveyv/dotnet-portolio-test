@@ -41,12 +41,12 @@ section.light {
 }
 
 @media screen and (min-width: 301px) and (max-width: 770px) {
-        ul {
+        li {
         font-size: 11px;
         margin-left: 20%;
         }
     
-        .large {
+        p.large {
         font-size: 16px;
         }
     }
