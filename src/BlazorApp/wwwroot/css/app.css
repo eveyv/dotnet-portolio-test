@@ -44,20 +44,21 @@ section.light {
     ul {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        padding: 0; 
+        align-items: center;
+        padding: 0;
+        list-style-position: outside; 
     }
 
     li {
         font-size: 11px;
-        text-align: center; 
+        text-align: left; 
         margin: 5px 0;
     }
     
-        p {
-        font-size: 16px;
-        }
+    p.large {
+    font-size: 16px !important;
     }
+}
 
     section img.background {
         width: 100vmax;
