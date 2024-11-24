@@ -53,20 +53,11 @@ section.light {
         font-size: 11px;
         text-align: left; 
         margin: 5px 0;
+        list-style-position: outside !important; 
     }
     
     p.large {
-    font-size: 16px !important;
-    }
-
-    /* hr {
-        width: 100%;
-        padding: 0;
-        margin: 3rem auto;
-    } */
-
-    .fix-margins-phone {
-        width: 90% !important;
+        font-size: 16px !important;
     }
 }
 
