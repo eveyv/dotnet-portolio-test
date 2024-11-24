@@ -58,6 +58,16 @@ section.light {
     p.large {
     font-size: 16px !important;
     }
+
+    hr {
+        width: 100%;
+    }
+
+    .fix-margins-phone {
+        padding: 0;
+        margin: 3rem auto;
+        width: 90%;
+    }
 }
 
     section img.background {
